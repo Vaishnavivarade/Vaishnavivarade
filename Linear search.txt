@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	int a[5]={5,40,10,6,23};
+	int i,item,flag;
+	printf("Enter the for search:");
+	scanf("%d",&item);
+	for(i=0;i<5;i++)
+	{
+		if(a[i]==item)
+		{
+			flag=i+1;
+			break;
+		}
+		else
+		flag=0;
+	}
+	if(flag!=0)
+	{
+		printf("item found",flag);
+	}
+	else
+	{
+		printf("item not found");
+	}
+	return 0;
+}
+
+Output:-
+Enter the for search:40
+item found
+--------------------------------
+Process exited after 43.81 seconds with return value 0
+Press any key to continue . . .
+Enter the for search:7
+item not found
+--------------------------------
+Process exited after 6.471 seconds with return value 0
+Press any key to continue . . .
